@@ -42,5 +42,14 @@ let arrow = (a,b) => {
     console.log(arguments);
 }
 
-arrow(1,2); // Error, arrow functions does not have it's own scope it's has an access on it's lexical scope (المكان اللي مكتوبه فيه)
+// arrow(1,2); // Error, arrow functions does not have it's own scope it's has an access on it's lexical scope (المكان اللي مكتوبه فيه)
 // add arrow function to a parent declaration function & re-check the "arguments" again.
+
+function parentFunction(x,y,z){
+    let arrowInParent = (a,b) => {
+        console.log("arrow Fn inside parent Fn: ",arguments);
+    }
+    arrowInParent(4,5);
+}
+
+parentFunction(7,8,9); // [7,8,9]
