@@ -12,7 +12,7 @@
 ## Week 2 — Closures
 
 - [ ] What is a closure?
-- [ ] Closure memory behavior
+- [ ] Closure memory behavior 
 - [ ] Private variables using closures
 - [ ] Recap Week 1
 
